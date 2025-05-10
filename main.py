@@ -23,7 +23,7 @@ sheet = client.open(SHEET_NAME).sheet1
 
 # Apollo Lookup (Simulated)
 def apollo_lookup(name):
-    API_KEY = 'Qjcs3tTy-wLgjLhb14U8Zg'
+    API_KEY = os.environ.get("API_KEY")
     base_url = 'https://api.apollo.io/v1/people/match'
 
     params = {
